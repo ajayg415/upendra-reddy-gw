@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h1>Printing todos</h1>
+  <div *ngIf = "resultModel">
+    <ul *ngFor="let model of resultModel">
+      <div>
+        <div>
+          <span class="badge">userId</span>
+    <span class="name">{{model.userId}}</span>
+        </div>
+        <br/>
+        <div>
+          <span class="badge">Id</span>
+    <span class="name">{{model.id}}</span>
+        </div>
+        <br/>
+        <div>
+          <span class="badge">Title</span>
+    <span class="name">{{model.title}}</span>
+        </div>
+        <br/>
+        <div>
+          <span class="badge">completed</span>
+    <span class="name">{{model.completed}}</span>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    </ul>
+  </div>
+</div>
+
+
